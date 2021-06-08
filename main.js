@@ -327,7 +327,7 @@ function parseData(xml) {
                 days[day].windSpeed      = Math.round(days[day].windSpeed * 10) / 10;
                 days[day].pressure       = Math.round(days[day].pressure);
 
-              //  days[day].date = adapter.formatDate(days[day].date);
+                days[day].date = String(days[day].date);
 
                 delete days[day].count;
                 for (const name in days[day]) {
